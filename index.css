@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f1f1f1;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.movie-card {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+}
+
+.movie-card .left {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+.movie-card .left img {
+  max-height: 250px;
+  border-radius: 10px;
+}
+
+.movie-card .right {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card .title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.movie-card .plot {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.movie-card .price {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #007b00;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer .rating {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffa41b;
+}
+
+.footer .str-btn {
+  font-size: 25px;
+  color: #ffa41b;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer button {
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.favourite-btn {
+  background-color: #bc16dd;
+  color: #fff;
+  margin: 5px;
+}
+
+.favourite-btn:hover {
+  background-color: #a311bd;
+}
+
+.cart-btn {
+  background-color: #251bb1;
+  color: #fff;
+  margin: 5px;
+}
+
+.cart-btn:hover {
+  background-color: #1d1391;
+}
